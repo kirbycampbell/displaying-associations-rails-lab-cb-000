@@ -1,5 +1,5 @@
 <h1><%= @artist.name %></h1>
-<h3>Songs: <%= @artist.songs.each do |song| %>
+<ul>Songs: <%= @artist.songs.each do |song| %>
             <li><%= link_to song.title, song_path(song) %></li>
             <% end %>
-</h3>
+</ul>
