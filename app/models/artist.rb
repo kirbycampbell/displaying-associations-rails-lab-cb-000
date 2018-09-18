@@ -1,4 +1,4 @@
 class Artist < ActiveRecord::Base
-  has_many :songs, through: :artist_id
+  has_many :songs
 
 end
